@@ -1,0 +1,12 @@
+<div>
+    <h2>Delete Item in Cart</h2>
+    <label for="cartItemIdInput">Cart Item ID:</label>
+      <input type="number" id="cartIdInput" [(ngModel)]="cartItemId">
+
+      <p>Are you sure you want to delete item in cart with ID: {{ cartItemId }}?</p>
+
+      <button (click)="deletecart()">Delete</button>
+
+      <div *ngIf="msg">{{ msg }}</div>
+  </div>
+  

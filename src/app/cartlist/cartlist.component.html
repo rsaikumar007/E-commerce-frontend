@@ -1,0 +1,27 @@
+<div>
+    <h1>Cart List</h1>
+      <table border="5">
+          <thead>
+            <tr>
+              <th>CartItemId</th>
+              <th>Quantity</th>
+              <th>ItemPrice</th>
+              <th>OrderId</th>
+              <th>ProductId</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cartItem of carts ">
+              <td>{{cartItem.cartItemId}}</td>
+              <td>{{cartItem.quantity}}</td>
+              <td>{{cartItem.itemPrice}}</td>
+              <td>{{cartItem.order.orderId}}</td>
+              <td>{{cartItem.product.productId}}</td>
+              
+      
+      
+            </tr>
+          </tbody>
+        </table>
+      </div>

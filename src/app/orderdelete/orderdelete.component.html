@@ -1,0 +1,12 @@
+<div>
+    <h2>Delete Order</h2>
+    <label for="orderIdInput">Product ID:</label>
+      <input type="number" id="orderIdInput" [(ngModel)]="orderId">
+
+      <p>Are you sure you want to delete order with ID: {{ orderId }}?</p>
+
+      <button (click)="deleteOrder()">Delete</button>
+
+      <div *ngIf="msg">{{ msg }}</div>
+  </div>
+  

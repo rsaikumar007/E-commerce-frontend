@@ -1,0 +1,13 @@
+<div>
+    <h1>Add product</h1>
+    <form>
+        ProductId: <input type="text" name="productId" [(ngModel)]="product.productId"><br>
+        ProductName: <input type="text" name="productName"  [(ngModel)]="product.productName"><br>
+        Description: <input type="text" name="description"  [(ngModel)]="product.description"><br>
+        ProductPrice: <input type="text" name="projectPrice"  [(ngModel)]="product.productPrice"><br>
+        <input type="button" value="submit" (click)="createProduct()">
+     
+       </form>
+    
+       <div id="msg">{{msg}}</div>
+    </div>

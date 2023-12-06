@@ -1,0 +1,23 @@
+<div>
+  <h1>Updating order... </h1>
+  <form>
+   OrderId: <input type="number" name="orderId" [(ngModel)]="order.orderId"><br>
+   CustomerId: <input type="number" name="customerId" [(ngModel)]="order.customerId"><br>
+   OrderDate: <input type="date" name="orderDate"  [(ngModel)]="order.orderDate"><br>
+   TotalAmount: <input type="number" name="totalAmount"  [(ngModel)]="order.totalAmount"><br>
+   PaymentMethod: 
+   <button type="button" (click)="setPaymentMethod('UPI')">UPI</button>
+   <button type="button" (click)="setPaymentMethod('COD')">COD</button><br>
+   Chosen Payment Method: {{ order.paymentMethod }}<br>
+
+  Transaction ID: {{ order.transactionId }}<br>
+  Payment Status: 
+      <input type="text" name="paymentStatusInput" [(ngModel)]="order.paymentStatus">
+      <br>
+   <input type="button" value="submit" (click)="orderUpdate()">
+
+  </form>
+
+  <div id="msg">{{msg}}</div>
+
+  </div>
